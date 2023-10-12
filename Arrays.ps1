@@ -1,4 +1,4 @@
-$rooms = "Athena","Troja","Aristoteles","Platon"
+$rooms = "Athena"
 
 Write-Host $rooms.count
 Write-Host $rooms[0]
