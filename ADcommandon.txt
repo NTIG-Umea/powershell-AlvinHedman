@@ -1,0 +1,13 @@
+﻿Get-ADGroupMember -Identity "Administrators" | Select name, objectClass
+
+New-ADUser -Name "Alvin" -AccountPassword (ConvertTo-SecureString "Alvhed06" -AsPlainText -Force) -Enabled @true
+
+Remove-ADUser -Identity "Name"
+
+New-ADGroup -Name "group name"
+
+Remove-ADGroup -Identity "group name"
+
+New-ADOrganizationalUnit -Name "BlueViolet" -Description "Alvin"
+
+Get-ADOrganizationalUnit -Filter "*" | Select Name
