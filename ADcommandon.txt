@@ -4,10 +4,16 @@ New-ADUser -Name "Alvin" -AccountPassword (ConvertTo-SecureString "Alvhed06" -As
 
 Remove-ADUser -Identity "Name"
 
+Get-ADUser -FILTER 'NAME -like "*"'
+
 New-ADGroup -Name "group name"
 
 Remove-ADGroup -Identity "group name"
 
+get-ADGroup -filter 'name -like "access*"'
+
 New-ADOrganizationalUnit -Name "BlueViolet" -Description "Alvin"
 
 Get-ADOrganizationalUnit -Filter "*" | Select Name
+
+Set-ADAccountPassword NAME -reset
