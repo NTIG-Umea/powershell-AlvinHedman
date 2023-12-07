@@ -17,3 +17,5 @@ New-ADOrganizationalUnit -Name "BlueViolet" -Description "Alvin"
 Get-ADOrganizationalUnit -Filter "*" | Select Name
 
 Set-ADAccountPassword NAME -reset
+
+Set-ADAccountPassword -Identity "Alvin"
