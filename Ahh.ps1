@@ -1,1 +1,1 @@
-﻿New-ADUser -name "Jocke Nilsson" -AccountPassword (ConvertTo-SecureString "Jocnil06" -AsPlainText -Force) -Enabled @true
+﻿New-ADUser -Name "Anders Andersson" -AccountPassword (ConvertTo-SecureString "Andand06" -AsPlainText -Force) -Enabled @true -path "OU=Alvins users, DC=Walters, DC=Labb"

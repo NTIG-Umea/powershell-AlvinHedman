@@ -19,3 +19,5 @@ Get-ADOrganizationalUnit -Filter "*" | Select Name
 Set-ADAccountPassword NAME -reset
 
 Set-ADAccountPassword -Identity "Alvin"
+
+New-ADUser -Name "Anders Andersson" -AccountPassword (ConvertTo-SecureString "Andand06" -AsPlainText -Force) -Enabled @true -path "OU=Alvins users, DC=Walters, DC=Labb"
