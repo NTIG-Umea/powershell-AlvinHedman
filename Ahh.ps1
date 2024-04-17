@@ -1,0 +1,1 @@
+﻿New-ADUser -name "Jocke Nilsson" -AccountPassword (ConvertTo-SecureString "Jocnil06" -AsPlainText -Force) -Enabled @true
